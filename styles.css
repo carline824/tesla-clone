@@ -1,0 +1,66 @@
+body {
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-S-New-Hero-Tablet-NA.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h4 {
+    text-align: center;
+    color: white;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #3e6ae1;
+    border: none;
+    padding: 16px;
+    border-radius: 6px;
+    color: white;
+    width: 200px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2c4ba1;
+}
+
+.topnav {
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    justify-content: right;
+}
+
+.topnav a#menu {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 8px;
+}
+
+.topnav a#menu:hover {
+    background-color: rgba(255,255,255,0.5);
+}
