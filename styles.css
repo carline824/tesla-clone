@@ -109,9 +109,10 @@ button:hover {
     display: flex;
     justify-content: right;
     align-items: center;
+    gap: 8px;
 }
 
-.support {
+.right-icon {
     width: 24px;
     height: 24px;
     filter: invert(1);
