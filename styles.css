@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-S-New-Hero-Tablet-NA.png");
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-S-New-Hero-Desktop-NA.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,16 +57,11 @@ button:hover {
     position: sticky;
     color: white;
     overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    /* float: auto; */
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     padding: 8px 16px;
     font-size: 18px;
-    text-decoration: none;
-    /* justify-content: right; */
 }
-
 
 .nav-list {
     text-decoration: none;
@@ -75,21 +70,90 @@ button:hover {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 4px;
 }
 
 .nav-list-item {
-    padding: 8px 4px;
     display: flex;
     align-items: center;
     text-decoration: none;
 }
 
 .nav-list-item a {
+    padding: 4px 8px;
     text-decoration: none;
     color: white;
+    font-size: 14px;
 }
 
 .nav-list-item:hover {
-    background-color: hotpink;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.right-box {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.right-icon {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+    text-decoration: none;
+}
+
+.right-list a {
+    padding: 4px;
+    display: flex;
+    border-radius: 8px;
+    transition: all 250ms;
+}
+
+.right-list {
+    display: flex;
+    gap: 2px;
+}
+
+.right-list a:hover {
+    background-color: rgba(255,255,255,0.2); 
+}
+
+a:hover, button:hover {
+    cursor: pointer;
+}
+
+.side-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 150px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.side-bar .nav-list-item a {
+    color: black;
+    width: 100%;
 }
