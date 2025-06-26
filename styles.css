@@ -110,3 +110,9 @@ button:hover {
     justify-content: right;
     align-items: center;
 }
+
+.support {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
