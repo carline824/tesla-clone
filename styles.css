@@ -1,10 +1,22 @@
+@font-face {
+    font-family: "Universal Sans Text";
+    src: url("./universal_sans/font.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 .section-1 {
     background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-S-New-Hero-Desktop-NA.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-family: sans-serif;
     height: 100vh;
+}
+
+body {
+    font-family: "Universal Sans Text", sans-serif;
+    font-weight: bold;
 }
 
 h1 {
@@ -26,6 +38,7 @@ h4 {
     border-radius: 6px;
     width: 200px;
     font-size: 16px;
+    font-weight: 500;
 }
 
 .button-1 {
@@ -242,7 +255,7 @@ a:hover, button:hover, .button:hover {
     display: flex;
 }
 
-.white-space {
+.section-2 {
     padding: 8rem 0;
     background-color: white;
     color: black;
@@ -253,9 +266,63 @@ a:hover, button:hover, .button:hover {
     width: 100%
 }
 
-.white-space-container {
+.badge-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+}
+
+.badge-divider {
+    width: 1px;
+    height: 100%;
+    background-color: #908888;
+}
+
+.badge-title {
+    font-size: 3rem;
+}
+
+.badge-sub {
+    font-size: 1rem;
+    color: #908888;
+    font-weight: 400;
+}
+
+.badge-unit {
+    font-size: 1rem;
+}
+sup {
+    font-size: 0.5em;
+}
+
+.section-3 {
+    padding: 0 4rem;
+    background-color: white;
+}
+
+.section-3-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3-img-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    height: 100vh;
+    width: 100%;
+}
+
+.section-3-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.section-3-title-text {
+    font-size: 2rem;
 }
