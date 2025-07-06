@@ -110,6 +110,8 @@ h4 {
     display: flex;
     align-items: center;
     text-decoration: none;
+    transition: all 250ms;
+    border-radius: 4px;
 }
 
 .nav-list-item a {
@@ -117,10 +119,22 @@ h4 {
     text-decoration: none;
     color: white;
     font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list-item a span {
+    color: transparent;
+    font-weight: normal;
+    transition: all 250ms;
+}
+
+.nav-list-item:hover a span {
+    color: #908888;
 }
 
 .nav-list-item:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.05);
     border-radius: 4px;
 }
 
@@ -363,7 +377,7 @@ sup {
     top: 0;
     width: 100%;
     overflow: hidden;
-    z-index: 10;
+    z-index: 20;
 }
 
 .top-bar-button {
