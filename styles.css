@@ -5,7 +5,6 @@
     font-style: normal;
 }
 
-
 .section-1 {
     background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-S-New-Hero-Desktop-NA.png");
     background-size: cover;
@@ -18,7 +17,7 @@
 body {
     font-family: "Universal Sans Text", sans-serif;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 h1 {
@@ -51,14 +50,14 @@ h4 {
 .button-2 {
     background-color: white;
     color: black;
-    
+
 }
 
 .button-container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .button-1:hover {
@@ -72,12 +71,12 @@ h4 {
 }
 
 .topnav a#menu {
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 8px;
 }
 
 .topnav a#menu:hover {
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .logo {
@@ -121,7 +120,7 @@ h4 {
 }
 
 .nav-list-item:hover {
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
 }
 
@@ -165,10 +164,12 @@ h4 {
 }
 
 .right-list a:hover {
-    background-color: rgba(255,255,255,0.2); 
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-a:hover, button:hover, .button:hover {
+a:hover,
+button:hover,
+.button:hover {
     cursor: pointer;
 }
 
@@ -204,7 +205,7 @@ a:hover, button:hover, .button:hover {
 
 .menu-button {
     padding: 16px;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     display: none;
     cursor: pointer;
     width: 30px;
@@ -213,13 +214,18 @@ a:hover, button:hover, .button:hover {
     justify-content: space-between;
 }
 
+.menu-container {
+    display: none;
+}
+
 @media (max-width: 768px) {
 
     .menu-button {
         display: flex;
     }
-    html #menu-toggle:checked ~ .side-bar {
-        position: fixed; 
+
+    html #menu-toggle:checked~.side-bar {
+        position: fixed;
         left: 0;
         top: 0;
         bottom: 0;
@@ -232,9 +238,17 @@ a:hover, button:hover, .button:hover {
     .div-center .div-right-list {
         display: none;
     }
+
+    .menu-container {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
 }
 
-#menu-toggle:checked ~ .side-bar {
+#menu-toggle:checked~.side-bar {
     position: fixed;
     top: 0;
     right: 0;
@@ -251,7 +265,7 @@ a:hover, button:hover, .button:hover {
     padding: 16px;
 }
 
-#menu-toggle:checked + .menu-button + .side-bar .nav-list-item a {
+#menu-toggle:checked+.menu-button+.side-bar .nav-list-item a {
     display: flex;
 }
 
@@ -296,6 +310,7 @@ a:hover, button:hover, .button:hover {
 .badge-unit {
     font-size: 1rem;
 }
+
 sup {
     font-size: 0.5em;
 }
