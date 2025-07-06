@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .section-1 {
     background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-S-New-Hero-Desktop-NA.png");
     background-size: cover;
@@ -241,6 +245,9 @@ button:hover,
         display: flex;
     }
 
+    .badge-container {
+        flex-direction: column;
+    }
     html #menu-toggle:checked~.side-bar {
         position: fixed;
         left: 0;
@@ -281,7 +288,6 @@ button:hover,
     align-items: flex-start;
     justify-content: flex-start;
     margin: 0;
-    padding: 16px;
 }
 
 #menu-toggle:checked+.menu-button+.side-bar .nav-list-item a {
@@ -436,12 +442,19 @@ sup {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding: 0.5rem;
 }
 
 .menu-button-container label {
-    margin-right: 2rem;
 }
 
 .menu-button-container label:hover {
     background-color: rgba(0, 0, 0, 0.05);
+}
+
+.side-bar ul {
+    list-style: none;
+    padding: 0rem 1rem;
+    margin: 0;
+
 }
